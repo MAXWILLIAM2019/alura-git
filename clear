@@ -1,0 +1,238 @@
+[33mcommit de5c0260c368ddb0d16968608271750acad86013[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Max William <maxwilliam0440@gmail.com>
+Date:   Wed Sep 28 18:31:01 2022 -0300
+
+    Adicionado sobre nome
+
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 2e0a9c3..ed33514 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -8,7 +8,7 @@[m
+ <body>[m
+   <header>[m
+  <img src="https://i.postimg.cc/D02nLDN2/html.png" alt="imagem html" class="photo">[m
+[31m-  <h1 id="title">MAX WILLIAM</h1>[m
+[32m+[m[32m  <h1 id="title">MAX WILLIAM MOREIRA DE CARVALHO</h1>[m
+   </header>[m
+   <section>[m
+     <header>[m
+
+[33mcommit a62987758d52d2b731f5f2d6fcfa442f836e25b0[m
+Author: Max William <maxwilliam0440@gmail.com>
+Date:   Wed Sep 28 18:28:11 2022 -0300
+
+    teste primeiro commit
+
+[1mdiff --git a/flex_direction.html b/flex_direction.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..775ed23[m
+[1m--- /dev/null[m
+[1m+++ b/flex_direction.html[m
+[36m@@ -0,0 +1,94 @@[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m
+[32m+[m[32m  <head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1">[m
+[32m+[m[32m    <title>Fundamentos Flex Direction</title>[m
+[32m+[m[32m    <style>[m
+[32m+[m[32m      .flex-container {[m
+[32m+[m[32m        margin: 0;[m
+[32m+[m[32m        padding: 0;[m
+[32m+[m[32m        display: flex;[m
+[32m+[m[32m        list-style: none;[m
+[32m+[m[32m      }[m
+[32m+[m
+[32m+[m[32m      .flex-item {[m
+[32m+[m[32m        background: blue;[m
+[32m+[m[32m        height: 50px;[m
+[32m+[m[32m        width: 50px;[m
+[32m+[m[32m        line-height: 50px;[m
+[32m+[m[32m        font-size: 20px;[m
+[32m+[m[32m        color: white;[m
+[32m+[m[32m        text-align: center;[m
+[32m+[m[32m        margin: 5px;[m
+[32m+[m[32m      }[m
+[32m+[m
+[32m+[m[32m      .row {[m
+[32m+[m[32m        flex-direction: row;[m
+[32m+[m[32m      }[m
+[32m+[m
+[32m+[m[32m      .row-reverse {[m
+[32m+[m[32m        flex-direction: row-reverse;[m
+[32m+[m[32m      }[m
+[32m+[m
+[32m+[m[32m      .row-reverse li {[m
+[32m+[m[32m        background-color: red;[m
+[32m+[m[32m      }[m
+[32m+[m
+[32m+[m[32m      .column {[m
+[32m+[m[32m        float: left;[m
+[32m+[m[32m        flex-direction: column;[m
+[32m+[m[32m      }[m
+[32m+[m
+[32m+[m[32m      .column li {[m
+[32m+[m[32m        background: orange;[m
+[32m+[m[32m      }[m
+[32m+[m[41m      [m
+[32m+[m[32m      .column-reverse {[m
+[32m+[m[32m        float: rigth;[m
+[32m+[m[32m        flex-direction: column-reverse;[m
+[32m+[m[32m      }[m
+[32m+[m[41m      [m
+[32m+[m[32m      .column-reverse li {[m
+[32m+[m[32m        background: purple;[m
+[32m+[m[32m      }[m
+[32m+[m
+[32m+[m[32m    </style>[m
+[32m+[m[32m  </head>[m
+[32m+[m
+[32m+[m[32m  <body>[m
+[32m+[m[32m    <ul class="flex-container">[m
+[32m+[m[32m      <li class="flex-item">1</li>[m
+[32m+[m[32m      <li class="flex-item">2</li>[m
+[32m+[m[32m      <li class="flex-item">3</li>[m
+[32m+[m[32m      <li class="flex-item">4</li>[m
+[32m+[m[32m      <li class="flex-item">5</li>[m
+[32m+[m[32m    </ul>[m
+[32m+[m
+[32m+[m[32m    <ul class="flex-container row-reverse">[m
+[32m+[m[32m      <li class="flex-item">1</li>[m
+[32m+[m[32m      <li class="flex-item">2</li>[m
+[32m+[m[32m      <li class="flex-item">3</li>[m
+[32m+[m[32m      <li class="flex-item">4</li>[m
+[32m+[m[32m      <li class="flex-item">5</li>[m
+[32m+[m[32m    </ul>[m
+[32m+[m
+[32m+[m[32m    <ul class="flex-container column">[m
+[32m+[m[32m      <li class="flex-item">1</li>[m
+[32m+[m[32m      <li class="flex-item">2</li>[m
+[32m+[m[32m      <li class="flex-item">3</li>[m
+[32m+[m[32m      <li class="flex-item">4</li>[m
+[32m+[m[32m      <li class="flex-item">5</li>[m
+[32m+[m[32m    </ul>[m
+[32m+[m[41m    [m
+[32m+[m[32m     <ul class="flex-container column-reverse">[m
+[32m+[m[32m      <li class="flex-item">1</li>[m
+[32m+[m[32m      <li class="flex-item">2</li>[m
+[32m+[m[32m      <li class="flex-item">3</li>[m
+[32m+[m[32m      <li class="flex-item">4</li>[m
+[32m+[m[32m      <li class="flex-item">5</li>[m
+[32m+[m[32m    </ul>[m
+[32m+[m
+[32m+[m[32m  </body>[m
+[32m+[m
+[32m+[m[32m</html>[m
+[1mdiff --git a/index.html b/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2e0a9c3[m
+[1m--- /dev/null[m
+[1m+++ b/index.html[m
+[36m@@ -0,0 +1,38 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m[32m<head>[m
+[32m+[m[32m  <meta charset="utf-8">[m
+[32m+[m[32m  <title>Max William</title>[m
+[32m+[m[32m  <link rel="stylesheet" href="style.css">[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m  <header>[m
+[32m+[m[32m <img src="https://i.postimg.cc/D02nLDN2/html.png" alt="imagem html" class="photo">[m
+[32m+[m[32m  <h1 id="title">MAX WILLIAM</h1>[m
+[32m+[m[32m  </header>[m
+[32m+[m[32m  <section>[m
+[32m+[m[32m    <header>[m
+[32m+[m[32m      <h2 class="subtitle">Posts</h2>[m
+[32m+[m[32m    </header>[m
+[32m+[m[32m  <article class="post">[m
+[32m+[m[32m    <header>[m
+[32m+[m[32m      <h3 class="post_title">Post #1</h3>[m
+[32m+[m[32m      <img src="https://i.postimg.cc/t4dkmMv0/codehtml.png" alt="codehtml" class="post_image">[m
+[32m+[m[32m    </header>[m
+[32m+[m[32m    <p class="post_content">[m
+[32m+[m[32m      O teste rápido será usado como uma ferramenta de auxílio complementar no diagnóstico da <a href="https://www.linkedin.com/in/max-william-a4b355118/"target="_blank">COVID-19</a>. Ampla estratégia de testagem é crucial para controlar a epidemia causada pelo novo <a href="mailto:maxwilliam0440@gmail.com">coronavírus</a>.[m
+[32m+[m[32m    </p>[m
+[32m+[m[32m  </article>[m
+[32m+[m[32m  </section>[m
+[32m+[m[32m  <footer>[m
+[32m+[m[32m    <ul class="contact_list">[m
+[32m+[m[32m    <li>[m
+[32m+[m[32m    <a href="mailto:maxwilliam0440@gmail.com" target="blank">Email</a>[m
+[32m+[m[32m    </li>[m
+[32m+[m[32m    <li>[m
+[32m+[m[32m      <a href="https://www.linkedin.com/in/max-william-a4b355118/"target="_blank">Linkedin</a>[m
+[32m+[m[32m    </li>[m
+[32m+[m[32m    </ul>[m
+[32m+[m[32m    </footer>[m
+[32m+[m[32m  </body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/style.css b/style.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..52beb88[m
+[1m--- /dev/null[m
+[1m+++ b/style.css[m
+[36m@@ -0,0 +1,60 @@[m
+[32m+[m[32mbody {[m
+[32m+[m[32m  background: #f7f7f7;[m
+[32m+[m[32m  font-family: verdana;[m
+[32m+[m[32m  max-width: 900px;[m
+[32m+[m[32m  margin: auto;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.photo {[m
+[32m+[m[32m  border: 1px solid #505050;[m
+[32m+[m[32m  border-radius: 50%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#title, .subtitle, .post_title {[m
+[32m+[m[32mcolor: #505050;[m
+[32m+[m[32m}[m
+[32m+[m[32m#title {[m
+[32m+[m[32m  font-size: 40px;[m
+[32m+[m[32m  text-tranform: uppercase;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32ma {[m
+[32m+[m[32m  text-decoration: line-through;[m
+[32m+[m[32m  color: #505050;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.post_title {[m
+[32m+[m[32mfont-size: 16px;[m
+[32m+[m[32mfont-style: italic;[m
+[32m+[m[32mmargin; 0;[m
+[32m+[m[32mmargin-bottom: 15px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.post {[m
+[32m+[m[32m  background: #fff;[m
+[32m+[m[32m  padding: 15px;[m
+[32m+[m[32m  border: 3px solid #505050;[m
+[32m+[m[32m  margin-bottom: 15px;[m
+[32m+[m[32m  border-radius: 15px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.post_content {[m
+[32m+[m[32m  margin: 0;[m
+[32m+[m[32m  margin-bottom: 15px;[m
+[32m+[m[32m  text-transform: capitalize;[m
+[32m+[m[32m  text-align: justify;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.post_image {[m
+[32m+[m[32m  margin-bottom: 15px;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.contact_list {[m
+[32m+[m[32m  list-style-type: none;[m
+[32m+[m[32m  padding-left: 15px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.contact_list li a {[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
